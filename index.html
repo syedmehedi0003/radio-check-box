@@ -10,13 +10,17 @@
             display: block;
             margin-bottom: 10PX;
         }
+        fieldset{
+            width: 40%;
+            margin-bottom: 10px;
+        }
     </style>
 
 </head>
 <body>
     <div>
         <h2>Please fill up the form</h2>
-
+        <form action="">
         <label for="name">Your Name:
             <input id="name" placeholder="Your Name" type="text">
         </label>
@@ -32,6 +36,38 @@
     </div>
 
 
-    
+    <fieldset>
+        <legend>Select any one</legend>
+        <label for="mango">
+            <input id="mango" type="radio" name="fruit">Mango
+        </label>
+
+        <label for="banana">
+            <input id="banana" type="radio" name="fruit">Banana
+        </label>
+
+        <label for="apple">
+            <input id="apple" type="radio" name="fruit">Apple
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Select as you wish</legend>
+        <label for="badam">
+            <input id="badam" type="checkbox">Badam
+        </label>
+
+        <label for="chanachur">
+            <input id="chanachur" type="checkbox">Chanachur
+        </label>
+
+        <label for="kismis">
+            <input id="kismis" type="checkbox">kismis
+        </label>
+    </fieldset>
+
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
